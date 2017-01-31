@@ -3,7 +3,7 @@ DRM Social proteção de arquivos pdf com inserção de dados dos usuário em ca
 
 ```php
 
-require_once 'vendor/DRMSocial.php'; 
+require_once 'drm/DRMSocial.php'; 
 
 $dados['name'] = 'username';
 $dados['email'] = 'email@email.com';
