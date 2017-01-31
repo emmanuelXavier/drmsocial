@@ -2,13 +2,6 @@
 
 require_once('fpdi/fpdi.php');
 
-/**
- * Created by PhpStorm.
- * User: abimael
- * Date: 27/01/17
- * Time: 16:59
- */
-
 class PDFRotate extends FPDI
 {
     var $angle=0;

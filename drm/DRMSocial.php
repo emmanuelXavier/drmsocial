@@ -17,14 +17,6 @@ function drmPDF($dados, $pathFilePdf, $pathNewPdf)
 
         echo " page : {$i} <br>";
 
-        /**
-         *  $dados['name'] = 'Meginho Concurseiro';
-            $dados['email'] = 'meginho@mege.com.br';
-            $dados['fone'] = '99 98465-7677';
-            $dados['cpf'] = '987.980.985-89';
-            $pdf->setDado($dados);
-         */
-
         $tpl = $pdf->importPage($i);
         $size = $pdf->useTemplate($tpl);
 
