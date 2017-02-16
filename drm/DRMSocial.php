@@ -15,8 +15,6 @@ function drmPDF($dados, $pathFilePdf, $pathNewPdf)
 
     for ($i = 1; $i <= $pagecount; $i++) {
 
-        echo " page : {$i} <br>";
-
         $tpl = $pdf->importPage($i);
         $size = $pdf->useTemplate($tpl);
 
