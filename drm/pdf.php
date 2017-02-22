@@ -14,13 +14,17 @@ class PDF extends PDFRotate
 
     function Header()
     {
-        $this->SetFont('Arial','B',80);
-        $this->SetTextColor(229, 245, 255);
-        $this->RotatedText(43,220, $this->dado['cpf'], 45);
+        $this->SetFont('Arial','B',30);
+        $this->SetTextColor(235, 235, 235);
+        $this->RotatedText(80,180, $this->dado['cpf'], 45);
 
         $this->SetFont('Arial','I',9);
         $this->SetTextColor(5, 6, 86);
         $this->RotatedText(15,15, "{$this->dado['name']} | {$this->dado['fone']} | {$this->dado['email']}", 0);
+
+        $this->SetFont('Arial','',6);
+        $this->SetTextColor(71, 71, 71);
+        $this->RotatedText(45,285, utf8_decode('É proibida a reprodução deste material sem a devida autorização, sob pena da adotação das medidas cabíveis na esfera cível e penal.'), 0);
     }
 
     function RotatedText($x,$y,$txt,$angle)
